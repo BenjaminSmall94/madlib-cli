@@ -28,11 +28,11 @@ def merge(stripped_story, new_words_tuple):
     new_story = ""
     new_words_arr = [*new_words_tuple]
     for character in stripped_story:
-        print(new_story)
         if not character == '{' and not character == '}':
             new_story += character
         elif character == '{':
             new_story += new_words_arr.pop(0)
+    print(new_story)
     return new_story
 
 
@@ -78,4 +78,4 @@ if __name__ == '__main__':
 #             else:
 #                 sentenceElement += character
 #
-# print('\n', newStory)
+# print('\n', newStory)``
